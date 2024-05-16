@@ -1,0 +1,52 @@
+h1{
+    font-size: 35px;
+    position: relative;
+    margin-top: 1%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container {
+  display: flex;
+        justify-content: space-between; /* Distribuye los elementos horizontalmente */
+        align-items: center; /* Centra verticalmente los elementos */
+        min-height: 70px; /* Ajusta la altura según tus necesidades */
+        text-align: center;
+      }
+
+    /* Estilos del header */
+    header {
+        background-color: #242323;
+
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+/* Estilos para los botones */
+
+p {
+    position: absolute; 
+    text-align: center; 
+    color: rgb(255, 255, 255); 
+    font-size: 14px; 
+    font-family: Arial, sans-serif; 
+    top: 92%; 
+    left: 92%; 
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    transform: translate(-100, -100%); 
+}
+
+.btn-primary {
+    background-color: #5b0885; 
+    color: #ffffff; 
+    padding: 0.305rem 0.110rem; 
+    font-size: 1rem; 
+    border-radius: 0.25rem; 
+    text-decoration: none; 
+    cursor: pointer; 
+    position: absolute;
+    top: 95%; 
+    right: 93%; 
+  }

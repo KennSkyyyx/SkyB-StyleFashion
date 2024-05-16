@@ -1,0 +1,182 @@
+/* ESTILO PARA EL LOEADER DEL LOGIN*/
+.loader {
+  position: relative; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  width: 90px; 
+  height: 90px; 
+  margin: 15px auto; 
+  perspective: 800px; 
+}
+
+.text {
+  font-size: 20px; 
+  font-weight: 700;
+  color: #000000; 
+  z-index: 10; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.load-inner {
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  box-sizing: border-box; 
+  border-radius: 50%; 
+}
+
+.load-inner.load-one {
+  left: 0%; 
+  top: 0%; 
+  border-bottom: 6px solid #C748CF; 
+  animation: rotate1 2.15s linear infinite; 
+}
+
+.load-inner.load-two {
+  right: 0%; 
+  top: 0%; 
+  border-right: 6px solid #0B0170; 
+  animation: rotate2 2.15s 0.1s linear infinite; 
+}
+
+.load-inner.load-three {
+  right: 0%; 
+  bottom: 0%; 
+  border-top: 6px solid #8002BE; 
+  animation: rotate3 2.15s 0.15s linear infinite; 
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: rotateX(45deg) rotateY(-45deg) rotateZ(0deg); 
+  }
+  100% {
+    transform: rotateX(45deg) rotateY(-45deg) rotateZ(360deg); 
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotateX(45deg) rotateY(45deg) rotateZ(0deg); 
+  }
+  100% {
+    transform: rotateX(45deg) rotateY(45deg) rotateZ(360deg); 
+  }
+}
+@keyframes rotate3 {
+  0% {
+    transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg); 
+  }
+  100% {
+    transform: rotateX(-60deg) rotateY(0deg) rotateZ(360deg); 
+  }
+}
+/* Estilo para el documento HTML */
+html {
+  height: 100%; 
+  width: 100%; 
+  font-size: 20px; 
+  position: relative; 
+}
+body {
+  background-size: cover; 
+  font-family: Arial, sans-serif; 
+  text-align: center; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.form-group {
+  margin-bottom: 20px; 
+  text-align: left; 
+}
+.form-group input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.377); 
+  outline: none;
+  border: none; 
+  padding: 10px; 
+  border-radius: 5px; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.form-group input[type="password"] {
+  background-color: rgba(255, 255, 255, 0.377); 
+  outline: none;
+  border: none; 
+  padding: 10px; 
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+.form-group input {
+  outline: none;
+  width: 90%; 
+  padding: 10px;
+}
+.button-container {
+  text-align: center;
+}
+.btn {
+  width: 100px; 
+  padding: 5px; 
+  border: none; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  font-size: 15px; 
+  margin-bottom: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+}
+.btn-primary {
+  background-color: #3c0080; 
+  color: #000000; 
+}
+
+.btn.btn-primary {
+  color: rgb(224, 224, 224);
+
+}
+.btn-primary:hover {
+  background-color: #3700ff;
+  font-size: 25px; 
+  transition: background-color 3.0s;
+}
+a {
+  text-decoration: none !important; 
+}
+body {
+  background-size: cover; 
+  font-family: Arial, sans-serif; 
+  text-align: center; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login {
+  background-color: rgba(255, 255, 255, 0.562); 
+  padding: 20px; 
+  border-radius: 30px; 
+  width: 300px; 
+  box-shadow: 0px 0px 30px 15px #C748CF;
+  border: 1px solid #3a07f2b6; 
+}
+.title  {
+  position: absolute; 
+  text-align: center; 
+  color: rgb(255, 255, 255); 
+  font-size: 14px; 
+  font-family: Arial, sans-serif; 
+  top: 90%; 
+  left: 92%; 
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  transform: translate(-100, -100%); 
+}
+.btn:hover {
+  background-color: #0B0170; 
+}
+
+
+
+

@@ -1,0 +1,234 @@
+/* Estilos globales */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+display: flex;
+    justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    min-height: 70px; /* Ajusta la altura según tus necesidades */
+  }
+  
+
+  
+
+/* Estilos del header */
+header {
+    background-color: #242323;
+    color: #fff;
+    padding: 15px 0;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos de la sección del héroe */
+.hero {
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+.additional-info {
+ font-size: 18px;
+
+
+}
+.footer-links{
+    font-size: 16px;
+    text-align: left;
+   
+}
+
+p {
+   font-size: 24px;
+    
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 50px;
+
+}
+
+.social-media img {
+    padding-top: 1%;
+    width: 45px;
+    margin-right: 4px;
+}
+
+.social-media a:last-child img {
+    margin-right: 0;
+}
+/* Estilos de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    gap: 50px;
+
+}
+
+.grid-item {
+    padding: 89px;
+}
+
+.grid-item img {
+
+    max-width: 100%;
+    display: block;
+    box-shadow: 0px 0px 20px 20px; color: #000000;
+    transition: box-shadow 0.6s ease-in-out;
+}
+.grid-item img:hover {
+    box-shadow: 0px 0px 20px 20px #ea00ff; /* Cambia la sombra al pasar el mouse */
+}
+/* Resto de estilos permanecen igual */
+.footer-links,
+.additional-info,
+.social-media {
+  margin-inline: 10px; /* Ajusta el espacio entre los elementos */
+  margin-right: 50px;
+  margin-left: 20px;
+}
+
+    #perfil {
+    display: inline-block; /* Para que el contenedor abarque solo el ancho necesario */
+}
+
+.logo {
+    width: 40px; /* Ancho del logotipo */
+    height: 40px; /* Alto del logotipo */
+    margin-right: 25px; /* Espacio entre el logotipo y el texto */
+}
+#cerrarSesion {
+    display: inline-block; /* Para que el contenedor abarque solo el ancho necesario */
+}
+
+.logo {
+    width: 40px; /* Ancho del logotipo */
+    height: 40px; /* Alto del logotipo */
+
+}
+#registro {
+    display: inline-block; /* Para que el contenedor abarque solo el ancho necesario */
+}
+
+.logo {
+    width: 40px; /* Ancho del logotipo */
+    height: 40px; /* Alto del logotipo */
+
+}
+#calificacion {
+    display: inline-block; /* Para que el contenedor abarque solo el ancho necesario */
+}
+
+.logo {
+    width: 40px; /* Ancho del logotipo */
+    height: 40px; /* Alto del logotipo */
+
+}
+#solicitudPedido {
+    display: inline-block; /* Para que el contenedor abarque solo el ancho necesario */
+}
+
+.logo {
+    width: 40px; /* Ancho del logotipo */
+    height: 40px; /* Alto del logotipo */
+
+}
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-contenido {
+  background-color: #9154D3;
+  margin: 15% auto;
+  padding: 20px;
+  width: 40%;
+  box-shadow: 0px 0px 20px 20px #C748CF;
+  border: 2px solid #3a07f2b6; 
+}
+
+.cerrar {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+input[type="text"] {
+    padding: 10px; 
+    font-size: 16px; 
+    border: 2px solid #ff00ff; 
+    border-radius: 5px; 
+    width: calc(40% - 40px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input[type="text"]:focus {
+
+    outline: none; 
+}
+button {
+ background-color: #444141;
+ border-radius: 4px;
+ color: #fff;
+ cursor: pointer;
+ padding: 10px 20px;
+ font-size: 18px;
+ font-weight: bold;
+ letter-spacing: 1px;
+ border: none;
+}
+
+button:hover {
+ background-image: linear-gradient(90deg, #FFFFFF 50%, #FF00FF 10%, #FFFFFF 50%, #FF00FF 10%);
+ animation: slidernbw 5s linear infinite;
+ color: #000;
+}
+
+@keyframes slidernbw {
+ to {
+  background-position: 20vw;
+ }
+}
